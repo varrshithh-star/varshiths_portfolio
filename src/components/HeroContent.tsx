@@ -62,18 +62,18 @@ export const HeroContent: React.FC<HeroContentProps> = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className="flex flex-wrap items-center gap-4 sm:gap-5 mb-10 md:mb-12"
+        className="flex flex-wrap items-center gap-3 sm:gap-4 mb-10 md:mb-12"
       >
         <button
           onClick={onViewWork}
-          className="bg-[#7A1212] hover:bg-[#600e0e] active:scale-[0.98] text-white text-xs sm:text-sm font-bold tracking-wider px-7 sm:px-9 py-3.5 sm:py-4 rounded-lg uppercase shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+          className="bg-[#7A1212] hover:bg-[#600e0e] active:scale-[0.98] text-white text-xs sm:text-sm font-bold tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg uppercase shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
         >
           VIEW WORK
         </button>
 
         <button
           onClick={onAboutMe}
-          className="border-[1.5px] border-[#7A1212] text-neutral-900 hover:bg-[#7A1212]/5 active:scale-[0.98] text-xs sm:text-sm font-bold tracking-wider px-7 sm:px-9 py-3.5 sm:py-4 rounded-lg uppercase transition-all duration-200 cursor-pointer"
+          className="border-[1.5px] border-[#7A1212] text-neutral-900 hover:bg-[#7A1212]/5 active:scale-[0.98] text-xs sm:text-sm font-bold tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg uppercase transition-all duration-200 cursor-pointer"
         >
           ABOUT ME
         </button>
@@ -86,6 +86,23 @@ export const HeroContent: React.FC<HeroContentProps> = ({
         transition={{ duration: 0.6, delay: 0.6 }}
         className="flex items-center space-x-6 text-neutral-800"
       >
+        {/* WhatsApp Icon */}
+        <a
+          href={PROFILE_INFO.whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp Chat"
+          className="hover:text-[#25D366] transition-colors p-1 cursor-pointer group"
+          title="WhatsApp: +91 8867236582"
+        >
+          <svg
+            className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform fill-current"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.233-1.237a9.96 9.96 0 004.779 1.221h.005c5.505 0 9.988-4.478 9.989-9.985A9.982 9.982 0 0012.012 2zm0 18.291h-.004a8.27 8.27 0 01-4.221-1.162l-.303-.18-3.136.741.761-3.056-.197-.314a8.272 8.272 0 01-1.267-4.331c.001-4.568 3.718-8.283 8.285-8.283a8.252 8.252 0 015.86 2.428 8.25 8.25 0 012.423 5.86c-.001 4.568-3.718 8.284-8.286 8.284zm4.538-6.205c-.249-.125-1.472-.726-1.7-.809-.228-.083-.394-.125-.561.125-.166.249-.643.809-.788.975-.145.166-.291.187-.54.062a6.83 6.83 0 01-2.001-1.233 7.532 7.532 0 01-1.385-1.724c-.145-.249-.015-.384.109-.508.112-.112.249-.291.374-.436.125-.145.166-.249.249-.415.083-.166.042-.312-.021-.436-.062-.125-.561-1.35-.769-1.849-.203-.488-.41-.422-.561-.43-.145-.008-.312-.01-.478-.01s-.436.062-.665.312c-.228.249-.872.852-.872 2.078 0 1.226.893 2.41 1.018 2.576.125.166 1.758 2.685 4.26 3.766.595.257 1.06.41 1.423.525.598.19 1.142.163 1.572.099.48-.072 1.472-.602 1.68-1.183.208-.581.208-1.08.145-1.183-.062-.104-.228-.187-.477-.312z"/>
+          </svg>
+        </a>
+
         {/* GitHub */}
         <a
           href={PROFILE_INFO.githubUrl}

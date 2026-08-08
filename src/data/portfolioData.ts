@@ -11,6 +11,7 @@ export const PROFILE_INFO = {
   experienceYears: '3+',
   email: 'varrshithh@gmail.com',
   phone: '+91 8867236582',
+  whatsappUrl: 'https://wa.me/918867236582?text=Hi%20Varshith,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!',
   githubUrl: 'https://github.com/varrshithh-star',
   githubUsername: 'varrshithh-star',
   linkedinUrl: 'https://linkedin.com/in/varshith-ga',
