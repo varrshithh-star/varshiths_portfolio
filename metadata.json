@@ -1,0 +1,6 @@
+{
+  "name": "Varshith Portfolio",
+  "description": "Portfolio hero section for Varshith - Creative Designer",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
